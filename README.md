@@ -1,6 +1,15 @@
 
+### To show arch:
 bun install;
 arch; node -e 'console.log(process.arch)'; bun script-node-arch; bun script-via-bun; bun script-via-bun-force; bun script-via-node
+
+
+### To show arch assumed in postinstall:
+rm -rf node_modules
+rm bun.lockb
+bun install
+
+---
 
 note:
  - the arch is taken as `x64` whenever a script is ran without '--bun'.
