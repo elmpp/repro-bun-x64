@@ -1,0 +1,17 @@
+{
+  "name": "bun-arm64",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "scripts": {
+    "script-node-arch": "node -e 'console.log(process.arch)'",
+    "script-via-bun": "bun ./my-script.js",
+    "script-via-bun-force": "bun --bun ./my-script.js",
+    "script-via-node": "node ./my-script.js"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
