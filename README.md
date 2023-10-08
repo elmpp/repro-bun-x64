@@ -9,6 +9,12 @@ rm -rf node_modules
 rm bun.lockb
 bun install
 
+Even doing the following provides no way to influence the arch:
+
+rm -rf node_modules
+rm bun.lockb
+bun --bun install
+
 ---
 
 note:
